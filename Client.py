@@ -7,7 +7,7 @@ with open('secret.key', 'rb') as key_file:
 cipher_suite = Fernet(key)
 # Socket
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client_socket.connect(('192.168.8.176', 24)) # parameteres: server IP , port
+client_socket.connect(('192.168.***.****', **)) # parameteres: server IP , port
 # Authentication
 username = input("Enter username: ")
 password = input("Enter password: ")
