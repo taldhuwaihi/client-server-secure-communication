@@ -2,7 +2,6 @@
 
 Two Raspberry Pi Zero 2 W boards communicating over TCP with symmetric encryption (Fernet/AES) and password authentication. Once logged in, the client remotely switches three LEDs wired to the server's GPIO pins.
 
-> **Draft note:** Anything in `[BRACKETS]` is a placeholder for something I couldn't verify from the code. Replace it with your own details, or delete it. Then delete this note.
 
 | | |
 |---|---|
@@ -69,9 +68,6 @@ Two Raspberry Pi Zero 2 W boards communicating over TCP with symmetric encryptio
 - Catch exceptions and close bad connections instead of crashing; add login attempt limits
 - Support multiple clients and log authentication events
 
-## Demo
-
-[Add a photo of the wiring and a screenshot or short recording of a session: login, `led 1 on`, LED lighting up. Optional: a Wireshark capture showing that the payload is unreadable.]
 
 ## Running it
 
@@ -83,8 +79,4 @@ pip install cryptography RPi.GPIO
 2. Copy `secret.key` to the client Pi.
 3. Set the server's IP address in `client.py`, then run it and log in.
 
-> **Never commit `secret.key`** or real credentials. Both are listed in `.gitignore`.
 
-## What I learned
-
-- [Two or three honest lines, e.g. why a pre-shared key doesn't scale, why password hashes need to be salted and slow, and why encryption alone doesn't stop replay.]
