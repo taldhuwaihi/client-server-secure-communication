@@ -16,7 +16,7 @@ with open('secret.key', 'wb') as key_file:
  key_file.write(key)
 # Hashed password (SHA-256)
 user_passwords = {
- "mounib": hashlib.sha256("khanafer".encode()).hexdigest()
+ "****": hashlib.sha256("****".encode()).hexdigest()
 }
 # Socket
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
